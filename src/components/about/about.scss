@@ -4,3 +4,12 @@
         background: url('../images/decor/decor_welcome-left-bg.png') left no-repeat, url('../images/decor/decor_welcome-right-bg.png') right no-repeat, rgba(248, 252, 255, 1);
     }
 }
+
+.-about .info {
+    background: #FFFFFF;
+    padding: 21px;
+    border-radius: 10px;
+    @media (min-width: 960px) {
+        padding-bottom: 67px;
+    }
+}
