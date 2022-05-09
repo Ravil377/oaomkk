@@ -1,9 +1,10 @@
 .-welcome {
-    @media (min-width: 640px) {
-        background: url('../images/decor/decor_welcome-left-bg.png') left no-repeat, url('../images/decor/decor_welcome-right-bg.png') right no-repeat;
-    }
+    // @media (min-width: 640px) {
+    //     // background: url('../images/decor/decor_welcome-left-bg.png') left no-repeat, url('../images/decor/decor_welcome-right-bg.png') right no-repeat;
+    // }
     @media (min-width: 1000px) {
-        background: url('../images/decor/decor_welcome-left-bg.png') left -17px no-repeat;
+        background: url(../images/decor/decor_welcome-left-bg.png) -87px 2px no-repeat;
+        z-index: -1;
     }
 }
 
@@ -17,17 +18,21 @@
 
 .-welcome .welcome {
     grid-area: logo;
-    min-height: 718px;
+    min-height: 750px;
     width: fit-content;
     display: flex;
     align-items: center;
-    
+    padding-top: 50px;
     @media (min-width: 1250px) {
         width: unset;
         min-height: auto;
         margin-top: 178px;
         margin-bottom: 122px;
+        padding-top: 0;
     }
+}
+.-welcome .-inner {
+    margin-bottom: 0;
 }
 .-welcome .welcome__top {
     display: flex;
@@ -89,8 +94,10 @@
     margin-top: 53px;
     grid-area: c;
     order: 2;
+    margin-bottom: 120px;
     @media (min-width: 1250px) {
         order: 1;
+        margin-bottom: 0;
     }
 }
 
@@ -122,12 +129,14 @@
     position: absolute;
     z-index: -1;
     right: -370px;
+    animation: 3s 1.5s move infinite alternate ease-out;
 }
 .-welcome .decor img:nth-child(3) {
     position: absolute;
-    z-index: -1;    
-    right: -327px;
+    z-index: -2;    
+    right: -736px;
     top: 0;
+    animation: 3s 3s move infinite alternate ease-out;
 }
 @keyframes move {
     from {
@@ -142,15 +151,41 @@
     opacity: .3;
     @media (min-width: 1000px) {
         display: block;
-        animation: 2s move infinite alternate ease-out;
+        animation: 3s move infinite alternate ease-out;
         opacity: 1;
     }
 }
 * + .-welcome {
     overflow-x: hidden;
     margin-top: 0 !important;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .-welcome .-inner {
     margin-top: 0 !important;
+}
+
+.-welcome .recommendation {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    max-width: 476px;
+    width: 100%;
+    background: url('../images/welcome-covid.png') left bottom no-repeat, #F8FCFF;
+    background-size: contain;
+    box-shadow: 0px 0px 49px 0px rgba(255, 255, 255, 0.72) inset;
+    padding: 10px 10px 10px 110px;
+    border-radius: 20px 20px 0 0;
+    @media (min-width: 500px) {
+        padding: 22px 52px 22px 110px;    
+    }
+    p {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #051E48;
+    }
 }

@@ -1,10 +1,26 @@
 .-speaker {
-    background: url('../images/decor/background-who-goes.png') center no-repeat;
+    // background: url('../images/decor/background-who-goes.png') center no-repeat;
+    position: relative;
+    z-index: 2;
+}
+.-speaker .bgparalax {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    object-fit: cover;
+    position: absolute;
+    z-index: -2;
+}
+.-speaker .bgparalax2 {
+    display: none;
 }
 @media (min-width: 1600px) {
-    .-speaker {
-        background: url('../images/decor/decor_right-bg.png') left no-repeat, url('../images/decor/background-who-goes.png') center no-repeat;
-    }        
+    .-speaker .bgparalax2 {
+        display: block;
+        left: 0;
+        position: absolute;
+    }    
 }
 
 .-speaker-list > :not(:empty) {
