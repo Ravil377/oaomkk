@@ -1,28 +1,85 @@
-header.header.pt-25
-    .container-xxl
-        .row.align-items-center.mb-20.justify-content-lg-between.justify-content-sm-center.justify-content-between
-            //- .col-3.d-lg-none
-            //-     include ../hamburger/hamburger
+<div class="-outer -navi-wr">
+    <div class="-inner">
+        <div class="-navi">
+            <div class="mobi is-hiding">
+                <ul>
+                    <li><a href="/"><img src="/images/logo/transurals-m.svg" alt=""></a></li>
+                    <li><button onclick="this.closest(&quot;.mobi&quot;).classList.toggle(&quot;is-hiding&quot;)"><img src="/images/icon/burger.svg" alt=""></button></li>
+                </ul>
+            </div>
+            <div class="top">
+                <ul class="lng">
+                    <li>
+                        <a class="is-active">
+                            <img src="/images/nav/ru.svg" alt="">
+                            <span>RU</span></a>
+                    </li>
+                    <li>
+                        <a href="/en/">
+                            <img src="/images/nav/en.svg" alt="">
+                            <span>EN</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/ba/">
+                            <img src="/images/nav/ba.svg" alt="">
+                            <span>BA</span>
+                        </a>
+                    </li>          
+                </ul>
+                <ul class="inf">
+                    <li><a href="tel:+78002343613">+7 (800) 234-27-02</a></li>
+                    <li><a href="mailto:info@forum-zauralye.com"> info@forum-zauralye.com</a></li>
+                </ul>
+                <ul class="soc">
+                    <li style="display:none !important;"><a href="https://www.facebook.com/%D0%98%D0%BD%D0%B2%D0%B5%D1%81%D1%82%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9-%D1%81%D0%B0%D0%B1%D0%B0%D0%BD%D1%82%D1%83%D0%B9-%D0%97%D0%B0%D1%83%D1%80%D0%B0%D0%BB%D1%8C%D0%B5-110341670764693/?__tn__=%2Cd%2CP-R&amp;eid=ARBrfwIo_iE89tPwYDJJk_hIq-zYhPxQoiQ3uvFekJpdlxQTnbG6xb58iLtZFl1USlIjHOVipyxCx5lK"><img src="/local/templates/zaural_2021_v2/img/nav/fb.svg" alt="Facebook"></a></li>
+                    <li style="display:none !important;"><a href="https://www.instagram.com/forum_zauralye/"><img src="/local/templates/zaural_2021_v2/img/nav/ig.svg" alt="Instagram"></a></li>
+                </ul>
+                <ul class="reg"> 
+                    <li>
+                        <a style="text-decoration: none;" href="/registration/">
+                            <button>Регистрация</button>
+                        </a>
+                    </li> 
+                    <li><button data-modal="REG_SMI">Регистрация для&nbsp;СМИ</button></li> 
+                </ul>
+                <ul style="display:none;" class="reg">
+                    <li style="flex-basis: auto;"><a class="-bt --rainbow" href="/live/"><img src="/img/icon/live.svg" alt=""> Прямая трансляция</a></li>
+                </ul>
+            </div>
+            <div class="bot">
+                <ul class="nav" style="text-transform: uppercase;">
+                    <li class="active "><a href="/">Главная</a></li>
+                    <li>
+                        <a href="/about/"><span>О форуме</span><img src="/images/icon/arrow-down.svg" alt=""></a>
+                            <ul style="--shift-x: 0px;">
+                                <li><a href="/about/">О форуме</a></li>
+                                <li><a href="/archive/">Архив 2019</a></li>
+                                <li><a href="/archive-21/">Архив 2021</a></li>
+                            </ul>
+                    </li>	
+                    <li>
+                        <a href="/news/"><span>Новости</span><img src="/images/icon/arrow-down.svg" alt=""></a>
+                        <ul style="--shift-x: 0px;">
+                            <li><a href="/news/?y=2021">2021</a></li>
+                            <li><a href="/news/?y=2020">2020</a></li>
+                            <li><a href="/news/?y=2019">2019</a></li>
+                        </ul>
+                    </li>	
+                    <li class=""><a href="/media/">Медиа</a></li>
+                    <li>
+                        <a href="/participants/"><span>Участникам</span><img src="/images/icon/arrow-down.svg" alt=""></a>
+                        <ul style="--shift-x: 0px;">
+                            <li><a href="/participants/">Участникам</a></li>
+                            <li><a href="/participants/vol/">Волонтерам</a></li>
+                            <li><a href="/live/">Трансляции</a></li>
+                        </ul>
+                    </li>	
+                    <li class=""><a href="/schedule/">Программа</a></li>
+                    <li class=""><a href="/contacts/">Контакты</a></li>
+                    <li class=""><a href="https://photo.forum-zauralye.com">Фотобанк</a></li>
+                </ul>      
+        </div>
+    </div>
+</div></div>
 
-            .col-xxl-5.col-lg-7.col-sm-12.col-8.mb-lg-0.mb-sm-40.mb-0.align-items-sm-center
-                    .logo.header__logo
-                        include ../logo/logo
-
-            .col-xxl-7.col-lg-5.col-md-12.col-4.header__connection-container
-                ul.header__connection.--align-center.flex-sm-row.flex-column
-                    li
-                        a(href="tel:+79656693777" title='+7 965 66-93-7777') 
-                            +icon("phone").d-xxl-none.header__connection-icon
-                            p.d-none.d-xxl-block.mb-0 +7 965 66-93-7777
-                    li
-                        a(href="mailto: NORKA@bn.rosneft.ru" title='NORKA@bn.rosneft.ru') 
-                            +icon("envelope").d-xxl-none.header__connection-icon
-                            p.d-none.d-xxl-block.mb-0 NORKA@bn.rosneft.ru
-                    li
-                        a(href="#").header__connection-link_bg.--align-center
-                            +icon('online').header__connection-icon
-                            p.d-none.d-lg-block.mb-0 Прямая трансляция
-                .d-md-none
-                    include ../hamburger/hamburger
-        .row.justify-content-center
-            include ../mainmenu/mainmenu

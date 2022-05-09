@@ -1,0 +1,10 @@
+﻿<svg xmlns='http://www.w3.org/2000/svg' version='1.1' viewBox='0 0 10 10' preserveAspectRatio='none'>
+<linearGradient id='linear-gradient' x2='0%' y2='100%'>
+  <stop offset='0%' stop-color='#0f508c'/>
+  <stop offset='100%' stop-color='#019cdf'/>
+</linearGradient>
+<g fill='url(#linear-gradient)'>
+<path d='M 1 0 L 9 0 L 10 10 L 0 10'/>
+</g>
+
+</svg>

@@ -1,0 +1,38 @@
+.-speaker {
+    background: url('../images/decor/background-who-goes.png') center no-repeat;
+}
+@media (min-width: 1600px) {
+    .-speaker {
+        background: url('../images/decor/decor_right-bg.png') left no-repeat, url('../images/decor/background-who-goes.png') center no-repeat;
+    }        
+}
+
+.-speaker-list > :not(:empty) {
+    max-width: 300px;
+    width: 100%;
+    background: url('../images/decor/decor_down.png') bottom no-repeat, white;
+}
+
+.-speaker-list {
+    justify-content: center;
+}
+.-speaker-list .pict {
+    padding: 20px;
+    padding-bottom: 0;
+    background: url('../images/decor/decor_back.png') bottom no-repeat;
+}
+.-speaker-list {
+    margin-bottom: 52px;
+}
+
+.-speaker-list * + .prof {
+    margin-bottom: 56px;
+}
+.-speaker .bt {
+    background: #00a8ff url(../images/decor/button_decor.png) no-repeat;
+    border-radius: 5px;
+    padding: 18px 0 15px;
+    max-width: 229px;
+    width: 100%;
+}
+

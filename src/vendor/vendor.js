@@ -1,4 +1,4 @@
-import './go-top/go-top'
+//import './go-top/go-top'
 
 // Magnific Popup
 // import './magnific-popup/init'

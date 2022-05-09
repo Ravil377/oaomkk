@@ -1,0 +1,87 @@
+.-loc-on-main .-inner
+{ margin-top: 48px;
+  margin-bottom: 48px; }
+
+
+.-loc-on-main .-loc-list .name
+{ font-size: 24px; }
+
+
+.-loc-on-main .-loc-list .addr
+{ font-size: 18px; }
+
+
+.-loc-list
+{ list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -24px;
+  margin-bottom: -24px; }
+
+
+.-loc-list > *
+{ min-width: 0;
+  margin-left: 24px;
+  flex: 1 1 300px; }
+
+
+.-loc-list > :not(:empty)
+{ margin-bottom: 24px; }
+
+
+.-loc-list .name
+{ font-size: 20px;
+  color: #232f4f; }
+
+
+.-loc-list .map
+{ position: relative;
+  padding-bottom: 65%;
+  overflow: hidden;
+  border-radius: 9px; }
+
+
+.-loc-list .map > *
+{ position: absolute;
+  width: 100%;
+  height: 100%; }
+
+
+.-loc-list * + .addr
+{ margin-top: 6px; }
+
+
+.-loc-list * + .view
+{ margin-top: 24px; }
+
+
+.-loc-list .addr
+{ display: flex;
+  gap: 6px;
+  align-items: center; }
+
+
+.-loc-list .addr img
+{ width: 1em;
+  height: 1em;
+  transform: scale(1.5); }
+
+
+.-loc-list .view .pict
+{ position: relative;
+  padding-bottom: 100%; }
+
+
+.-loc-list .view .pict img
+{ position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px; }
+
+
+.-loc-list .view .pict + .map
+{ margin-top: -120px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; }

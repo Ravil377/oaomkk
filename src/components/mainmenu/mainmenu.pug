@@ -5,7 +5,8 @@ mixin menuitem(item)
             if (item.link === '/')
                 a(href= "/")= item.text
             else
-                a(href= "/" + item.link + ".html")= item.text
+                //- a(href= "/" + item.link + ".html")= item.text
+                a(href= item.link)= item.text
 
             if block
                 block

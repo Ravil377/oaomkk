@@ -1,0 +1,14 @@
+.-head {
+    background: var(--bg-1, none) repeat-y top, linear-gradient(90deg, #008e3a, #027049);
+}
+.-head .date {
+    margin-top: 21px;
+    font-weight: 700;
+    font-size: 30.5264px;
+    line-height: 21px;
+    color: #051E48;
+    padding: 11px 28px;
+    background: #FFE400;
+    width: fit-content;
+    border-radius: 50px;
+}

@@ -1,0 +1,6 @@
+.-about {
+    background: rgba(248, 252, 255, 1);
+    @media (min-width: 640px) {
+        background: url('../images/decor/decor_welcome-left-bg.png') left no-repeat, url('../images/decor/decor_welcome-right-bg.png') right no-repeat, rgba(248, 252, 255, 1);
+    }
+}
