@@ -1,0 +1,63 @@
+.-table .-inner {
+    h1 {
+        margin-bottom: 26px;
+        color: #3e3f52;
+        font-weight: bolder;
+        --font-size: 36px;
+    }
+    & > p {
+        a {
+            font-weight: 700;
+        }
+    }
+    .-buttons {
+        margin: -12px;
+        button {
+            margin: 12px;
+            border: 2px solid #3E3F52;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            color: #3C4150;
+            box-shadow: 0px 10px 27px rgba(141, 141, 141, 0.15);
+            padding: 15px;
+            max-width: 290px;
+            width: 100%;
+            transition: .4s;
+            &:hover {
+                background: rgba(#3E3F52, .7);
+                color: #fff;
+            }
+            &._active {
+                background: #3E3F52;
+                color: #fff;
+            }
+        }
+    }
+    .-table-container {
+        margin-top: 39px;
+        overflow-x: scroll;
+        .table-content {
+            width: 1230px;
+            // overflow-x: scroll;
+        }
+        .col {
+            height: 63px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 400;
+            font-size: 13px;
+            text-align: center;
+            color: #3C4150;
+            border-right: 1px solid #fff;
+            &:last-child {
+                border-right: unset;
+            }
+            &._header {
+                font-weight: 700;
+                background: #EFF0F9;
+            }
+        }
+    }
+}

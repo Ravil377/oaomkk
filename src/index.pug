@@ -5,19 +5,75 @@ append variables
     - var pageClass = 'homepage'
     - var menuHref = '/'
 
-block welcome 
-    include ./components/welcome/welcome
-block about
-    include ./components/about/about
-block who-goes
-    include ./components/who-goes/who-goes
-block speaker
-    include ./components/speaker/speaker
-block program 
-    include ./components/program/program
-block memory
-    include ./components/memory/memory
-block location
-    include ./components/location/location
-block org
-    include ./components/org/org
+block table 
+    <div class="-outer whitebg -table">
+        <div class="-inner">
+            <p class="-bread">
+                <a href="/">Главная</a> 
+                | &nbsp;▪ <span>Каталог камня</span>
+            </p>
+            <h1>ИЗДЕЛИЯ В НАЛИЧИИ</h1>
+            p Из материала на производстве вы можете заказать по выгодной цене небольшие или единичные изделия, либо приобрести целый камень. Подойдет для изготовления столешниц на кухню, или столешниц для ванной комнаты.
+            p Чтобы забронировать изделие или материал, позвоните нашим менеджерам по телефону 
+                a(href="tel:+74959025242") +7 (495) 902 52 42 
+                | или напишите на почту 
+                a(href="mailto:granit@oaomkk.ru") granit@oaomkk.ru
+            .-buttons
+                .row.justify-content-sm-between.justify-content-center
+                    button(data-btn='details')._active.col-sm Детали
+                    button(data-btn='plates').col-sm Плиты
+                    button(data-btn='board').col-sm Борт
+                    button(data-btn='paving').col-sm Брусчатка
+            .-table-container 
+                .table-content
+                    .row
+                        .col._header № Заказа
+                        .col._header Продукция
+                        .col._header Обработка
+                        .col._header Месторождение
+                        .col._header Толщина, мм
+                        .col._header Длина, мм
+                        .col._header Ширина, мм
+                        .col._header Ед.изм 
+                        .col._header Кол-во
+                        .col._header Цена за ед.изм.<br>с НДС, руб
+                        .col._header Общ. стоимость.<br>с НДС, руб
+                    .row 
+                        .col 920
+                        .col борт
+                        .col пил фрез
+                        .col Возрождение
+                        .col 80
+                        .col 
+                        .col 200
+                        .col п/м
+                        .col 22
+                        .col 2131
+                        .col 46922
+                    .row 
+                        .col 920
+                        .col борт
+                        .col шлиф фрез
+                        .col Ала Носкуа
+                        .col 80
+                        .col 
+                        .col 200
+                        .col п/м
+                        .col 18
+                        .col 2000
+                        .col 35955
+                    .row 
+                        .col 920
+                        .col борт
+                        .col шлиф фрез
+                        .col Ала Носкуа
+                        .col 80
+                        .col 
+                        .col 200
+                        .col п/м
+                        .col 18
+                        .col 2000
+                        .col 35955
+        </div>
+    </div>
+

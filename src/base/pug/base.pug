@@ -11,27 +11,16 @@ html(lang="ru")
 
     body(class=pageClass)
         include ../../components/header/header
-        block welcome
-        block about
-        block who-goes
-        block speaker
-        block program
-        block memory
-        block location
-        block org
-        block gallery
-        block banner
-        block offer
-        
-        //- Include footer
-        include ../../components/footer/footer
+
+        block table
+        //- //- Include footer
+        //- include ../../components/footer/footer
 
 
         //a.go-top.go-top--js(href='#')
             +icon('arrow-up')
 
         script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
-        <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
         script(src=`${baseDir}js/main.js`)
 
         //- block script
