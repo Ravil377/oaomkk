@@ -11,3 +11,6 @@
 
 // Fixed block
 // import './fixedblock'
+
+// Rangeslider
+import './rangeSlider/ion.rangeSlider'
