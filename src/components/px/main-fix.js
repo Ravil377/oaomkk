@@ -9,9 +9,10 @@ let updateSelected = function(e) {
   document.querySelector('.is-visible').classList.remove('is-visible');
   document.querySelector('[data-currency-code="' + e.target.value + '"]').classList.add('is-visible');
 };
-currencySelect.addEventListener('change', updateSelected);
+currencySelect && currencySelect.addEventListener('change', updateSelected);
 
-const stoneDetailSmallSwiper = new Swiper(".stone__small-slider-js", {
+if(document.querySelector('.stone__small-slider-js')) {
+  const stoneDetailSmallSwiper = new Swiper(".stone__small-slider-js", {
     slidesPerView: 'auto',
     freeMode: true,
     watchSlidesProgress: true,
@@ -21,20 +22,22 @@ const stoneDetailSmallSwiper = new Swiper(".stone__small-slider-js", {
             direction: 'vertical'
         },
     }
-});
-const stoneDetailBigSwiper = new Swiper(".stone__big-slider-js", {
-    spaceBetween: 10,
-    slidesPerView: 1,
-    thumbs: {
-      swiper: stoneDetailSmallSwiper,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next-js',
-      prevEl: '.swiper-button-prev-js',
-    },
-});
+  });
+  const stoneDetailBigSwiper = new Swiper(".stone__big-slider-js", {
+      spaceBetween: 10,
+      slidesPerView: 1,
+      thumbs: {
+        swiper: stoneDetailSmallSwiper,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next-js',
+        prevEl: '.swiper-button-prev-js',
+      },
+  });
+}
+
 const tableHeader = document.querySelector('.catalog__header-js');
-tableHeader.addEventListener('click', (e) => {
+tableHeader && tableHeader.addEventListener('click', (e) => {
   const curr = e.target;
   const active = tableHeader.querySelector('._active');
   if (active) {
@@ -43,5 +46,4 @@ tableHeader.addEventListener('click', (e) => {
   if(active != curr) {
     curr.classList.add('_active');
   }
-  
 })
